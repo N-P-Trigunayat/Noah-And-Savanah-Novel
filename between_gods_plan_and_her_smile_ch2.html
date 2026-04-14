@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Between God's Plan & Her Smile — Chapter Two</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0f0d0c;
+    color: #e8e2d9;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.9;
+    min-height: 100vh;
+  }
+
+  .book {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 5rem 2rem 8rem;
+  }
+
+  p {
+    margin-bottom: 1.4em;
+    color: #d4ccc4;
+  }
+  p:last-child { margin-bottom: 0; }
+  em { font-style: italic; color: #e0d8ce; }
+  strong { font-weight: 500; color: #f0e8df; }
+
+  .chapter-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  .chapter-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #4a403b;
+    margin-bottom: 14px;
+  }
+  .chapter-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    color: #f0e8df;
+    line-height: 1.35;
+  }
+  .chapter-title span {
+    display: block;
+    font-size: 15px;
+    font-style: normal;
+    color: #6b5f58;
+    letter-spacing: 0.06em;
+    margin-top: 6px;
+  }
+
+  .god-epigraph {
+    border-left: 1.5px solid #6b2240;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    background: #0c0908;
+    border-radius: 0 4px 4px 0;
+  }
+  .god-epigraph p {
+    font-size: 16px;
+    font-style: italic;
+    color: #9a8880;
+    line-height: 1.8;
+    margin-bottom: 0.8em;
+  }
+  .god-epigraph p:last-child { margin-bottom: 0; }
+  .god-attr {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: #6b2240;
+    margin-top: 12px;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .pov-marker {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid #1e1a18;
+  }
+  .pov-noah { color: #5a52b8; }
+  .pov-savannah { color: #8c3a56; }
+
+  .scene-break {
+    text-align: center;
+    color: #2e2420;
+    font-size: 13px;
+    letter-spacing: 10px;
+    margin: 2.8rem 0;
+    user-select: none;
+  }
+
+  .god-interruption {
+    margin: 4rem 0;
+    padding: 2.25rem 2.5rem;
+    background: #090706;
+    border-top: 0.5px solid #231e1b;
+    border-bottom: 0.5px solid #231e1b;
+    text-align: center;
+  }
+  .god-interruption p {
+    font-size: 15.5px;
+    font-style: italic;
+    color: #8a7c74;
+    line-height: 1.9;
+    margin-bottom: 0.75em;
+  }
+  .god-interruption p:last-child { margin-bottom: 0; }
+  .god-interruption .god-attr {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    color: #4a3030;
+    margin-top: 16px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+  }
+
+  .god-afterthought {
+    margin-top: 4.5rem;
+    padding-top: 2.5rem;
+    border-top: 0.5px solid #1e1a18;
+  }
+  .god-afterthought-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #3a3230;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .god-afterthought p {
+    font-size: 16px;
+    font-style: italic;
+    color: #7a6e66;
+    line-height: 1.9;
+    text-align: center;
+    margin-bottom: 0.85em;
+  }
+  .god-afterthought p:last-child { margin-bottom: 0; }
+
+  .flashback {
+    margin: 3rem 0;
+    padding: 1.75rem 2rem;
+    border-left: 1.5px solid #2a1f1f;
+    background: #0a0807;
+  }
+  .flashback p {
+    font-size: 17.5px;
+    color: #8a7c74;
+    line-height: 1.85;
+    margin-bottom: 1em;
+  }
+  .flashback p:last-child { margin-bottom: 0; }
+  .flashback-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #3a2a2a;
+    margin-bottom: 1.2rem;
+  }
+
+  .ornament {
+    text-align: center;
+    color: #2e2420;
+    font-size: 13px;
+    letter-spacing: 6px;
+    margin: 2.5rem 0;
+    user-select: none;
+  }
+
+  .inline-thought {
+    display: block;
+    font-style: italic;
+    color: #7a6e66;
+    font-size: 17.5px;
+    margin: 1.8rem 2rem;
+    line-height: 1.75;
+  }
+</style>
+</head>
+<body>
+<div class="book">
+
+  <div class="chapter-header">
+    <div class="chapter-number">Chapter Two</div>
+    <div class="chapter-title">
+      Gravitational
+      <span>or: the patience of a dangerous thing</span>
+    </div>
+  </div>
+
+  <div class="god-epigraph">
+    <p>Here is what no one tells you about being loved by someone like him: it doesn't feel like love, at first. It feels like being studied. Like someone has decided you are interesting enough to be understood — fully, which is not something you asked for, and not something you know how to survive without damage.</p>
+    <p>She had no idea he was already taking her apart. Not cruelly. That is almost what makes it dangerous — the fact that he was doing it with so much care.</p>
+    <span class="god-attr">— G.</span>
+  </div>
+
+  <div class="pov-marker pov-noah">Noah</div>
+
+  <p>By the second Thursday he already knew too much about her.</p>
+
+  <p>He knew she came in wearing long sleeves even though the gym ran hot. He knew she chose the machine in the corner, the one with its back to the room, every single time. He knew she brought her own water bottle — dark green, dented at the bottom left — and that she put it exactly where she could see it, within arm's reach. He knew she exhaled through her mouth when something was hard and held her breath when she thought she was being watched.</p>
+
+  <p>He knew she laughed at her own mistakes before anyone else could get there first.</p>
+
+  <p>He knew all of this and he had not asked for any of it. That was the thing about the way his mind worked — it collected details the way a wound collects pressure. Silently. Without permission. And it collected details about her with a particular, ruthless efficiency that he hadn't yet decided what to do with.</p>
+
+  <p>He was not, by nature, a reckless person. He was deliberate and measured and he had been told, more than once, that he moved through the world like someone who was always three steps ahead of everyone else in the room. He did not find this flattering. It was lonely, mostly. Being three steps ahead meant being three steps away.</p>
+
+  <p>He had made a kind of peace with that — or not peace, but a working arrangement. He had his ambitions, his work, the architecture of a future he was building with his hands and his mind and a stubbornness that had no formal name yet. He had a life that made sense to him in the daylight, even if it was quiet in ways he didn't examine too closely.</p>
+
+  <p>And then Savannah walked in on a Tuesday and he hadn't been able to locate those three steps since.</p>
+
+  <p>He'd offered to train with her again, this Thursday. Kept it casual, kept his voice easy, held out the option the same way you hold out something to a bird you're not trying to spook. <em>If you want. No pressure either way.</em> She had looked at him for a second — that measuring look she had that she probably didn't know she was doing — and said, "Yeah, alright."</p>
+
+  <p>Two words. He had two words and he built the next forty-eight hours around them.</p>
+
+  <p>Which was, he was aware, not something a reasonable person did. He was also aware that reasonable had quietly left the building and he was not particularly invested in retrieving it.</p>
+
+  <div class="scene-break">· · ·</div>
+
+  <p>Training her was an exercise in restraint he had not anticipated needing.</p>
+
+  <p>Not in the way that sounds — or not only in that way. It was more specific than that. It was the restraint of knowing exactly how close to stand and choosing to stand two inches further. Of seeing her form collapse mid-set and having to decide, each time, whether this was a correction worth offering or something she needed to work through herself. Of watching her push past the point she'd have quit alone — watching her discover she had more in her than she thought — and having to hold his face entirely still so she wouldn't see what it did to him.</p>
+
+  <p>She was getting stronger. Not just physically. There was a quality to her presence on the third and fourth session that hadn't been there on the first — less of the held-breath-hoping-to-disappear, more of something settling into its own weight. She still took the corner machine. She still wore the long sleeves. But she'd started making eye contact when she talked to him, and there was a directness to it that he suspected she didn't offer very many people.</p>
+
+  <p>He was careful not to say too much about any of it. He'd learned early that telling Savannah something true about herself made her immediate reflex to throw something between herself and the truth — a joke, a subject change, a laugh that didn't quite reach where it was supposed to. So he was quiet about what he noticed. He stored it instead. Filed it in the same place he put everything he planned to come back to.</p>
+
+  <span class="inline-thought">He was already praying about her. He had been since the second Thursday, and he was not proud of the particular texture of those prayers, which were less <em>Lord, guide me</em> and more <em>Lord, what have You done.</em></span>
+
+  <p>He stood two inches back. He kept his voice even. He counted her reps with her and watched her discover herself and told himself he was doing the right thing, which was true, and that he had it under control, which was not.</p>
+
+  <div class="god-interruption">
+    <p>The most dangerous love is not the loud kind.</p>
+    <p>The loud kind announces itself. It gives you time to prepare, to decide, to build your defenses. You see it coming and you have the option, at least, of moving out of the way.</p>
+    <p>The quiet kind just waits. It stands two inches back, it keeps its voice even, it asks nothing of you — and all the while it is settling into the ground beneath you like water into clay. And by the time you feel the weight of it, it has already changed the shape of the ground entirely. You are standing in a different landscape. You didn't feel it happen.</p>
+    <p>She didn't feel it happen.</p>
+    <p>He knew exactly what he was doing. Whether he had the full vocabulary for it yet — that was a separate question. But somewhere underneath the deliberateness, underneath the patience, there was a boy of twenty-one who had looked across a gym and decided, in a way that had nothing to do with permission: <em>her.</em></p>
+    <p>I made him that way. I am not apologizing for it. But I do want you to understand what kind of story this is.</p>
+    <span class="god-attr">— G.</span>
+  </div>
+
+  <div class="pov-marker pov-savannah">Savannah</div>
+
+  <p>The third week, she started arriving five minutes early.</p>
+
+  <p>She sat in her car in the parking lot and stared at the time on her phone and thought about that — five minutes, which was not an accident, which was not a routine, which was a small and specific and deeply inconvenient piece of evidence about what was happening inside her — and then she got out of the car and went inside anyway because apparently she was going to do this.</p>
+
+  <p>The thing about Noah was that he didn't do anything she could name.</p>
+
+  <p>That was the problem. If he'd been obvious about it — if he'd been the kind of person who leaned in too close or made comments she'd have to pretend not to hear or looked at her in the way some people looked at her, which was a way she had learned to anticipate and navigate and mostly tolerate — she'd have had somewhere to put it. A category. A defense she already knew how to run.</p>
+
+  <p>He didn't give her any of that.</p>
+
+  <p>He stood where he stood and he helped when she asked and he was quiet in a way that felt — not cold, not absence. Intentional. Like he was giving her room on purpose. And every time she braced for the thing that always came after kindness — the claim, the expectation, the reveal of what the kindness was actually for — it didn't come. He just kept showing up. Patient and steady and there, like something geological.</p>
+
+  <p>She did not know what to do with that. She had no file for it.</p>
+
+  <div class="flashback">
+    <div class="flashback-label">Before</div>
+    <p>She had never been in a relationship. That was the thing people didn't understand when they tried to read her caution as inexperience — it wasn't inexperience, or not only. It was something more specific. She knew exactly how badly a person could be hurt by someone they trusted who had never been anything more than a friend.</p>
+    <p>There had been someone. A girl she'd known since she was nineteen, who had found her at the worst stretch of a bad year and stayed. Who had listened to the anxiety, the sleepless nights, the shape of all her fears — and had never once made her feel like a burden for having them. Who had shown up. Consistently, warmly, in all the ways Savannah had never known she needed.</p>
+    <p>Months of that. Months of feeling, for the first time, like someone had chosen her on purpose.</p>
+    <p>And then one afternoon this girl did something that hurt — shared something Savannah had told her in the dark, something private, something she had trusted to exactly one person. And when Savannah said, quietly, that she was hurt — that was when the bill arrived.</p>
+    <p><em>I don't understand how you can do this to me.</em> That was how it started. <em>After everything. Do you know how much I've listened to? Do you know how many nights I showed up for you when I had my own things going on? I was there when nobody else was, and this is what I get — you're going to make me the bad person over something so small?</em></p>
+    <p>The bill was her right to be hurt. That was what the kindness had been purchasing, all along, without her knowledge — her silence. Her gratitude was supposed to be large enough to cover any wound they might cause her, retroactively, in advance, for as long as they decided. She was supposed to know that. She was supposed to have understood the terms.</p>
+    <p>She hadn't. And for a long time afterward — longer than she would ever admit — she had wondered if the girl was right. If she had miscalculated. If the debt really was that large and she had simply failed to see it.</p>
+    <p>She was still, if she was honest, working on the part where she forgave herself for wondering.</p>
+  </div>
+
+  <p>Noah carried his water bottle over and set it next to hers without asking, and she watched him do it and thought: <em>don't.</em></p>
+
+  <p>He corrected her grip — careful, two fingers, barely a touch, gone before she could react — and she felt the correction in her whole body and thought: <em>don't.</em></p>
+
+  <p>"Good," he said, watching her finish the set. Just the word. Nothing attached to it. And she thought that she might actually be losing her mind, because there was no reason for the word <em>good</em> from a near-stranger at a gym to settle into her chest the way it did. To find some hollow thing in there and sit down in it.</p>
+
+  <div class="scene-break">· · ·</div>
+
+  <p>The first time he walked her home, it wasn't a question he asked.</p>
+
+  <p>She was lacing her shoes by the door and he fell into step beside her on the sidewalk the way water finds a downhill — not dramatic, not announced, just suddenly and naturally going in the same direction. She looked at him sideways. He looked straight ahead. The evening was still warm and the street was lit by the comfortable orange of shops that hadn't closed yet and somewhere someone was grilling something that smelled like summer.</p>
+
+  <p>"You're walking me home," she said. Not a question either.</p>
+
+  <p>"It's late," he said.</p>
+
+  <p>"It's eight-fifteen."</p>
+
+  <p>"Yeah," he said, like she'd agreed with him.</p>
+
+  <p>She adjusted her bag on her shoulder and matched his pace.</p>
+
+  <p>They talked about everything and nothing. He told her about a project he was working on — she didn't understand all of it but she understood his face while he talked about it, the way it changed, the brightness that climbed into his voice when he was in the middle of something he actually cared about. She told him about her job, the parts of it that were fine and the parts that were quietly grinding her down in ways she didn't usually say out loud. He listened. Not the polite surface kind of listening. The kind where she could feel his full attention like a physical weight on the side of her face.</p>
+
+  <p>She was talking to him like she'd known him for years. That scared her more than any of the rest of it.</p>
+
+  <p>At her door she said, "You didn't have to do that."</p>
+
+  <p>"I know," he said.</p>
+
+  <p>And then he said goodnight and turned and walked back the way they'd come, and she stood at her door and watched him go for probably three seconds longer than she should have before she made herself go inside. She stood in her hallway with her back against the closed door and pressed her hands flat against the wood behind her and breathed.</p>
+
+  <p>He had not asked for anything. He had not touched her. He had not said anything she could pull apart for subtext, had not performed the kindness in a way that put any shape of debt between them.</p>
+
+  <p>He had just walked beside her in the evening and talked to her like she was someone worth talking to and then said goodnight and left.</p>
+
+  <p>She stayed against the door for a long time.</p>
+
+  <p>The problem was not that she didn't trust him.</p>
+
+  <p>The problem — the real one, the one that sat at the bottom of her chest like a stone that had been there so long she'd almost forgotten it wasn't part of her — was that she didn't trust herself. She had been wrong before about who was safe. She had rebuilt herself afterward, slowly, with the patience of someone who had no choice, and she knew the shape of what she was now: functional, careful, not unhappy. Protected.</p>
+
+  <p>And now here was this boy — <em>this boy</em>, twenty-one, with his certainty and his quiet and his way of standing two inches back — and something in her that she'd thought was sealed was turning over in its sleep. Which was the most frightening thing she'd felt in a long time. Not because she thought he would hurt her.</p>
+
+  <p>Because she was starting to think he wouldn't.</p>
+
+  <p>Because she was starting to think that if she let herself believe that, and she was wrong again, there would not be enough of her left to collect afterward.</p>
+
+  <div class="god-afterthought">
+    <div class="god-afterthought-label">Afterthought</div>
+    <p>She stood against the door for eleven minutes.</p>
+    <p>He walked back alone in the dark and he did not pray — for the first time since he was seventeen. He walked and he thought about her hands on the cable, her voice on the sidewalk, the three seconds she'd watched him go. He thought about the long sleeves and the corner machine and the way she laughed at herself before anyone else could. He was starting to understand that she wore her damage on the inside, which was the most devastating kind — the kind no one sees unless they're paying the specific kind of attention he was paying.</p>
+    <p>He was twenty-one years old and he understood none of this consciously and all of it instinctively, which is the most dangerous combination.</p>
+    <p>He got home. He opened the leather journal. He wrote for a long time.</p>
+    <p>She was the subject of every sentence. He did not notice that there was no other subject. I did.</p>
+  </div>
+
+  <div class="ornament" style="margin-top: 5rem;">· · ·</div>
+
+</div>
+</body>
+</html>
