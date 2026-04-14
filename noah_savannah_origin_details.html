@@ -1,0 +1,115 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .root { padding: 1.5rem 0; font-family: var(--font-sans); }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 12px; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 12px; }
+  .card-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 6px; }
+  .card-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.7; }
+  .highlight { color: var(--color-text-primary); font-weight: 500; }
+  .quote-block { border-left: 2px solid #D4537E; padding-left: 1rem; margin: 1.5rem 0; }
+  .quote-text { font-family: var(--font-serif); font-size: 15px; color: var(--color-text-primary); line-height: 1.8; font-style: italic; }
+  .quote-attr { font-size: 12px; color: var(--color-text-tertiary); margin-top: 6px; }
+  .moment-row { display: grid; grid-template-columns: 28px 1fr; gap: 12px; margin-bottom: 16px; align-items: start; }
+  .moment-num { width: 28px; height: 28px; border-radius: 50%; background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; color: var(--color-text-secondary); flex-shrink: 0; }
+  .moment-body .moment-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+  .moment-body .moment-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.65; }
+  .rose-card { background: var(--color-background-primary); border: 0.5px solid #D4537E; border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 12px; }
+  .rose-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .rose-dot { width: 8px; height: 8px; border-radius: 50%; background: #D4537E; flex-shrink: 0; }
+  .rose-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.7; }
+  .pov-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .pov-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.85rem 1rem; }
+  .pov-name { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+  .pov-noah { color: #534AB7; }
+  .pov-sav { color: #993556; }
+  .pov-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+  .explore-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 7px 14px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); background: transparent; color: var(--color-text-primary); cursor: pointer; margin-top: 4px; margin-right: 8px; margin-bottom: 4px; }
+  .explore-btn:hover { background: var(--color-background-secondary); }
+</style>
+
+<div class="root">
+
+  <div class="section-label">How they found each other</div>
+
+  <div class="card">
+    <div class="card-title">The gym</div>
+    <div class="card-text">
+      She walked in unsure of everything — which machine, which weight, whether she even belonged there. He noticed immediately. Not in a predatory way. In a <span class="highlight">she looks lost and I know this place</span> way. He offered to help. She hesitated, then said yes. That hesitation was the beginning of everything.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Training together — the intimacy of it</div>
+    <div class="card-text">
+      There is something quietly devastating about someone teaching your body how to be stronger. He corrects her form — careful, respectful, never invasive. He counts her reps with her. He pushes her past the point she'd have quit alone, and she starts to realize she's <span class="highlight">capable of more than she thought.</span> The gym becomes a metaphor neither of them says out loud.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-label">The walks home — where the real story lives</div>
+
+  <div class="moment-row">
+    <div class="moment-num">1</div>
+    <div class="moment-body">
+      <div class="moment-title">The first time — practical</div>
+      <div class="moment-text">He walked her home because it was late and it made sense. She didn't read into it. He noticed which street, which turn, which door. He filed all of it.</div>
+    </div>
+  </div>
+  <div class="moment-row">
+    <div class="moment-num">2</div>
+    <div class="moment-body">
+      <div class="moment-title">The second time — ritual begins</div>
+      <div class="moment-text">He just fell into step beside her without asking. She didn't tell him not to. They talked about everything and nothing. The walk home started to feel like the best part of the day for both of them — and only one of them admitted that, silently, to himself.</div>
+    </div>
+  </div>
+  <div class="moment-row">
+    <div class="moment-num">3+</div>
+    <div class="moment-body">
+      <div class="moment-title">Multiple times — now it's theirs</div>
+      <div class="moment-text">It's become a thing. <span class="highlight">Their thing.</span> She looks for him when she's leaving. He's always there. Neither of them have named what this is. The street between the gym and her door has become the most important stretch of pavement in both their lives.</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="rose-card">
+    <div class="rose-title"><div class="rose-dot"></div> The three red roses — the most important scene so far</div>
+    <div class="rose-text">
+      Weeks ago, walking past a florist, she had said — almost to herself — that she loves red roses. Not to him, not as a hint. Just out loud, the way you say things you love when you see them. <span class="highlight">He said nothing. He remembered everything.</span>
+      <br><br>
+      Then one day, on the walk home, he stops at that same florist — or another one, or a street vendor — and comes back with three. Not a bouquet, not a grand gesture. Three. Specific. Intentional. He hands them over like it's simple. Like it's obvious.
+      <br><br>
+      <span class="highlight">"You said you liked them."</span>
+      <br><br>
+      That's it. No speech. And that is exactly why it breaks her.
+    </div>
+  </div>
+
+  <div class="section-label">The same moment — two heads</div>
+  <div class="pov-grid">
+    <div class="pov-card">
+      <div class="pov-name pov-noah">Noah's head</div>
+      <div class="pov-text">He's been thinking about doing this for weeks. He almost didn't. He did it like it was nothing because he didn't want her to feel pressured. He watches her face when she takes them and has to look away.</div>
+    </div>
+    <div class="pov-card">
+      <div class="pov-name pov-sav">Savannah's head</div>
+      <div class="pov-text">She laughs a little. Says something like "you didn't have to." Holds them against her chest the whole rest of the walk. Goes home, puts them in water, stares at them. Doesn't sleep right. Doesn't know what to do with a person who actually listens.</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="quote-block">
+    <div class="quote-text">"Three roses. Not twelve, not one. Three — because that's how many he could buy without it looking like a declaration. He was already in love, and he was trying so hard not to frighten her."</div>
+    <div class="quote-attr">— narrator note, chapter 2 or 3</div>
+  </div>
+
+  <div class="section-label">Write a scene</div>
+  <button class="explore-btn" onclick="sendPrompt('Write the scene where Noah first approaches Savannah in the gym and offers to help her train')">First gym meeting ↗</button>
+  <button class="explore-btn" onclick="sendPrompt('Write the rose scene — Noah buying Savannah 3 red roses on the walk home, from both their perspectives')">The rose scene ↗</button>
+  <button class="explore-btn" onclick="sendPrompt('Write one of their walks home — the easy conversation, the unspoken tension, the moment before she goes inside')">A walk home ↗</button>
+  <button class="explore-btn" onclick="sendPrompt('Write the scene where Savannah gets home after the roses and sits alone with them, replaying everything in her head')">Savannah alone after ↗</button>
+</div>

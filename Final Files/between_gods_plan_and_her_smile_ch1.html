@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Between God's Plan & Her Smile</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0f0d0c;
+    color: #e8e2d9;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.9;
+    min-height: 100vh;
+  }
+
+  .book {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 5rem 2rem 8rem;
+  }
+
+  /* — title page — */
+  .title-page {
+    text-align: center;
+    padding: 4rem 0 6rem;
+    border-bottom: 0.5px solid #2e2926;
+    margin-bottom: 5rem;
+  }
+
+  .main-title {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #f0e8df;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #6b5f58;
+    margin-bottom: 2rem;
+  }
+
+  .title-ornament {
+    color: #8c3a56;
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+
+  /* — section labels — */
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #6b5f58;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  /* — prologue — */
+  .prologue-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .prologue-title {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: #8c3a56;
+    margin-bottom: 10px;
+  }
+
+  .prologue-sub {
+    font-size: 21px;
+    font-style: italic;
+    color: #c9bfb5;
+  }
+
+  /* — body prose — */
+  p {
+    margin-bottom: 1.4em;
+    color: #d4ccc4;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  em { font-style: italic; color: #e0d8ce; }
+
+  /* — chapter — */
+  .chapter-break {
+    border: none;
+    border-top: 0.5px solid #2e2926;
+    margin: 5rem 0;
+  }
+
+  .chapter-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .chapter-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #4a403b;
+    margin-bottom: 14px;
+  }
+
+  .chapter-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    color: #f0e8df;
+    line-height: 1.35;
+  }
+
+  .chapter-title span {
+    display: block;
+    font-size: 15px;
+    font-style: normal;
+    color: #6b5f58;
+    letter-spacing: 0.06em;
+    margin-top: 6px;
+  }
+
+  /* — God's epigraph — */
+  .god-epigraph {
+    border-left: 1.5px solid #8c3a56;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    background: #140f0e;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .god-epigraph p {
+    font-size: 16px;
+    font-style: italic;
+    color: #b8a99f;
+    line-height: 1.8;
+    margin-bottom: 0.8em;
+  }
+
+  .god-epigraph p:last-child { margin-bottom: 0; }
+
+  .god-attr {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: #8c3a56;
+    margin-top: 12px;
+    text-transform: uppercase;
+  }
+
+  /* — POV marker — */
+  .pov-marker {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid #1e1a18;
+  }
+
+  .pov-noah { color: #5a52b8; }
+  .pov-savannah { color: #8c3a56; }
+
+  /* — scene break — */
+  .scene-break {
+    text-align: center;
+    color: #3a322e;
+    font-size: 14px;
+    letter-spacing: 12px;
+    margin: 3rem 0;
+    user-select: none;
+  }
+
+  /* — God's interruption mid-chapter — */
+  .god-interruption {
+    margin: 3.5rem 0;
+    padding: 2rem 2.5rem;
+    background: #0c0a09;
+    border-top: 0.5px solid #2e2926;
+    border-bottom: 0.5px solid #2e2926;
+    text-align: center;
+  }
+
+  .god-interruption p {
+    font-size: 15.5px;
+    font-style: italic;
+    color: #a09289;
+    line-height: 1.85;
+    margin-bottom: 0.7em;
+  }
+
+  .god-interruption p:last-child { margin-bottom: 0; }
+
+  /* — God's afterthought — */
+  .god-afterthought {
+    margin-top: 4rem;
+    padding-top: 2.5rem;
+    border-top: 0.5px solid #2e2926;
+  }
+
+  .god-afterthought-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #4a403b;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .god-afterthought p {
+    font-size: 16px;
+    font-style: italic;
+    color: #9a8c82;
+    line-height: 1.85;
+    text-align: center;
+    margin-bottom: 0.8em;
+  }
+
+  .god-afterthought p:last-child { margin-bottom: 0; }
+
+  /* — decorative — */
+  .ornament {
+    text-align: center;
+    color: #2e2926;
+    font-size: 13px;
+    letter-spacing: 6px;
+    margin: 2.5rem 0;
+  }
+</style>
+</head>
+<body>
+<div class="book">
+
+  <!-- TITLE PAGE -->
+  <div class="title-page">
+    <div class="subtitle">A dark romance</div>
+    <div class="main-title">Between God's Plan<br>&amp; Her Smile</div>
+    <div class="subtitle" style="margin-top: 10px; margin-bottom: 2rem;">Noah &amp; Savannah</div>
+    <div class="title-ornament">· · ·</div>
+  </div>
+
+  <!-- PROLOGUE -->
+  <div class="prologue-header">
+    <div class="prologue-title">Prologue</div>
+    <div class="prologue-sub">Before Either of Them Knew</div>
+  </div>
+
+  <div class="section-label">God's perspective</div>
+
+  <p>There is a kind of love that doesn't knock. It doesn't write letters in advance or announce itself with weather. It simply arranges itself — sets down its pieces with the patience of something that understands time the way a river understands distance — and then waits for you to arrive.</p>
+
+  <p>I have watched a great many arrivals. I do not tire of them.</p>
+
+  <p>He had been in that gym for forty-one minutes when she came through the door. He was on his third set of something he could not have named you in that moment, because his mind was — as it often was — somewhere else entirely. Running the architecture of a project no one had asked for yet. Drafting a letter to a future that wasn't finished being built. He was twenty-one and burning. The specific kind of burning that comes from having too much inside and not enough hands to hold any of it with.</p>
+
+  <p>She had been standing outside for six minutes.</p>
+
+  <p>I counted.</p>
+
+  <p>She does this — circles the ledge of a decision the way some people circle a pool they're not sure is warm enough. Talks herself in, then out, then back. Three times she had almost turned back. Three times something had kept her feet planted on that sidewalk. She would not have called it providence. She would have called it indecision. She would not have been entirely wrong, and she also would not have been entirely right.</p>
+
+  <p>She pushed the door open on her fourth attempt at leaving.</p>
+
+  <p>This is, I have found, how most important things begin. Not with confidence. Not with signs and burning bushes and voices from somewhere grand. With a person on a ledge for six minutes, choosing — on the fourth try, on the trembling edge of going home — to stay instead.</p>
+
+  <p>He was twenty-one. She was twenty-four. She was older by three years and an entire continent's worth of hurt. He was younger by those same three years and somehow, already, more certain than she had ever been about anything.</p>
+
+  <p>I knew what was going to happen when she pushed that door open.</p>
+
+  <p>They didn't.</p>
+
+  <p>That is, always, the most sacred part.</p>
+
+  <!-- CHAPTER BREAK -->
+  <hr class="chapter-break">
+
+  <!-- CHAPTER ONE -->
+  <div class="chapter-header">
+    <div class="chapter-number">Chapter One</div>
+    <div class="chapter-title">
+      Tuesday
+      <span>or: what was already decided</span>
+    </div>
+  </div>
+
+  <!-- GOD'S EPIGRAPH -->
+  <div class="god-epigraph">
+    <p>She had no idea that when she walked through that door, someone across the room stopped breathing for just a second and had to quietly collect himself. He had no idea she'd almost not come in at all — that the whole thing had been four decisions and three near-misses. I find it best not to tell them these things upfront. It makes the middle better.</p>
+    <div class="god-attr">— G.</div>
+  </div>
+
+  <!-- NOAH POV -->
+  <div class="pov-marker pov-noah">Noah</div>
+
+  <p>He noticed her the way you notice something that was missing before you knew it was missing.</p>
+
+  <p>She came through the door and he clocked her immediately — not deliberately, not intrusively, just the way his brain worked, cataloguing things before he could decide whether to. She stood at the entrance like she was giving herself one final chance to leave. Eyes moving over the room carefully. Shoulders up. She was doing that thing people do when they're trying to look like they belong somewhere they haven't yet made peace with.</p>
+
+  <p>He knew that thing. He did it at every party he'd ever been to. He'd done it this morning in the mirror.</p>
+
+  <p>He went back to his set.</p>
+
+  <p>He went back to his set four more times before he stopped pretending he wasn't watching.</p>
+
+  <p>She had found the cable machine — or more accurately, the cable machine had found her, and she had decided to fight it. The weight was wrong; he could see that from here. Her stance was too wide, heels not quite set, and she was pulling from her back in a way that was going to make tomorrow morning a very specific, very unpleasant conversation with her own body.</p>
+
+  <p>He should mind his business. He was a stranger in a public gym, not a coach, not anyone who'd been asked. She hadn't looked over here. She didn't need him.</p>
+
+  <p>But the weight was wrong. And that was the only rationale he gave himself when he unclamped his hands from the bar and walked over — he wasn't entirely sure it was the only reason, but it was the one he was working with.</p>
+
+  <p>"Hey — sorry to bother you," he said, and she turned.</p>
+
+  <p>He hadn't expected her face. You can see someone across a room and think you know what you're dealing with. You don't. Not until they turn around. Not until you get their eyes.</p>
+
+  <p>"Your weight might be a little heavy for that movement," he said. "If you want, I can show you the adjustment?"</p>
+
+  <p>She looked at him. Looked at the machine. Looked back at him with this expression that was doing its level best to be neutral and not quite getting there.</p>
+
+  <p>He waited. He wasn't going to rush her. He had the patience of someone who'd been lonely long enough to understand that most things worth having take a moment to decide.</p>
+
+  <p>"Sure," she said finally. The word came out measured. Careful. The way someone offers something small when they don't yet know if the other person is safe enough to give it to.</p>
+
+  <p>He adjusted the weight. Showed her the grip — demonstrated it, stepped back, let her try. No hovering. No commentary she hadn't asked for. She did the first rep with the new form and something in her posture shifted. Not much. Just enough. The kind of shift that happens when your body suddenly understands what it's supposed to be doing.</p>
+
+  <p>She finished the set.</p>
+
+  <p>And then she looked over at him — just for a second, this quick glance that was trying to be casual — and said, "Okay. That's actually a lot better." And then, because it was true and she was apparently not yet practiced at hiding when something actually made her happy, she smiled.</p>
+
+  <p>Noah had heard people talk about the world stopping. He had always thought it was a figure of speech.</p>
+
+  <p>It was — but the thing the figure of speech was pointing to was real. The room didn't literally stop. The cables kept humming. Someone's playlist bled through headphones two stations over. But for one full, suspended second, none of that had any weight at all. There was just her smile, which was enormous and bright and a little surprised at itself — like she'd felt something good and her face hadn't gotten the memo to be restrained about it in time. It was the most unguarded thing he'd seen in months. Maybe longer.</p>
+
+  <p>He was, without overstating it, entirely done for.</p>
+
+  <p>"Noah," he said.</p>
+
+  <p>"Savannah," she said.</p>
+
+  <p>And then they both went back to what they'd been doing, which was the only reasonable thing to do, and which turned out to be completely impossible — because for the rest of that hour he was hyperaware of every movement she made across the room, in the way you are when something new has entered your atmosphere and you haven't given it a name yet but every cell in your body already has.</p>
+
+  <!-- GOD'S INTERRUPTION -->
+  <div class="god-interruption">
+    <p>A boy crossed a room.</p>
+    <p>This is not a small thing. He did not know that. He had told himself he walked over because of the weight setting, because of the form, because she was going to hurt herself and someone should say something. He was not wrong. But he was also not entirely right. I have watched people cross rooms for a very long time. You learn to read what lives underneath the reason they give themselves.</p>
+    <p>He crossed it because something in him recognized something in her.</p>
+    <p>He won't understand that for a while. That's fine. I'm not in a hurry.</p>
+  </div>
+
+  <!-- SAVANNAH POV -->
+  <div class="pov-marker pov-savannah">Savannah</div>
+
+  <p>She had almost not come.</p>
+
+  <p>That was the thing her brain kept circling back to, later that night, lying on her bed with the lights off the way she did when the dark was easier to think in than the light. She had almost not come. She had sat in her car for six whole minutes in that parking lot — she'd checked her phone twice, she knew exactly how long it had been — talking herself into it and back out of it and into it again. And she had come in anyway. And something had happened that she didn't have a clean word for yet and wasn't sure she wanted one.</p>
+
+  <p>The gym was fine. That was the first thing. The gym was actually fine; she hadn't embarrassed herself, which was the only bar she'd set going in.</p>
+
+  <p>But then there was the boy. Noah.</p>
+
+  <p>Who had walked over without any of the energy she'd braced herself for — no performance, no smugness, nothing that said <em>let me rescue you.</em> He'd just shown her the adjustment with the patience of someone who actually wanted her to learn it, and then he'd stepped back. Stepped back in that particular way that was its own whole language — not cold, not like absence, but like intentional space. Like someone had taught him, or he'd figured out on his own, that giving a person room was sometimes the most generous thing you could do.</p>
+
+  <p>She was not used to that. She was not used to that at all, and she didn't know what to do with it, so she'd done the next rep.</p>
+
+  <p>And it had felt good. Her body doing what it was supposed to, the weight moving right, and she'd felt — just for that second — capable of more than she usually gave herself credit for, and she'd been happy about it before she remembered to modulate, and so the smile had just happened. Right there on her face, the big one she usually kept for private occasions, the one she didn't mean to give to strangers in gyms.</p>
+
+  <p>He hadn't made it weird.</p>
+
+  <p>She pressed the back of her hand against her mouth in the dark and thought about that — how he'd just received it. Smiled back, easy and genuine, like her being happy was a completely normal and unremarkable thing that required no further comment. Said his name. Let her say hers. And then they'd both continued existing in the same space without turning it into anything.</p>
+
+  <p>She told herself, quietly: <em>don't.</em></p>
+
+  <p>She said it out loud, just once, just to hear it take up some space in the room. <em>Don't.</em></p>
+
+  <p>She wasn't doing this. She didn't do this. There was a kind boy at a gym who knew something about cable machines and had a good face and gave her room, and that was it, that was the whole of it, and she was going back on Thursday for a workout and nothing else, and she was not going to spend any more time thinking about the way he'd looked at her when she smiled — like she had surprised him, like she was something worth being surprised by, like he had not been prepared for that and didn't quite know where to put it.</p>
+
+  <p>She went to sleep eventually.</p>
+
+  <p>Not for a while, though.</p>
+
+  <!-- GOD'S AFTERTHOUGHT -->
+  <div class="god-afterthought">
+    <div class="god-afterthought-label">Afterthought</div>
+    <p>She said <em>don't</em> twice. Out loud once.</p>
+    <p>He went home and opened his journal — the leather one he'd had for two years and mostly filled with equations and ambitions — and wrote a single line. He underlined it three times. Then he closed the book and didn't write anything else.</p>
+    <p>I won't tell you what it said. Some things are theirs before they're the story's.</p>
+    <p>I will say this: they both lay awake a long time. In different beds. In different rooms. With the same Tuesday sitting between them like a lamp that had just been switched on, and neither of them ready to decide what that light was for.</p>
+    <p>They both went back on Thursday.</p>
+    <p>Of course they did.</p>
+  </div>
+
+  <div class="ornament" style="margin-top: 5rem;">· · ·</div>
+
+</div>
+</body>
+</html>
