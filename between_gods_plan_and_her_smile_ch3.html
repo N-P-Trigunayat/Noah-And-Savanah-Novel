@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Between God's Plan & Her Smile — Chapter Three</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0f0d0c;
+    color: #e8e2d9;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.9;
+    min-height: 100vh;
+  }
+
+  .book {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 5rem 2rem 8rem;
+  }
+
+  p {
+    margin-bottom: 1.4em;
+    color: #d4ccc4;
+  }
+  p:last-child { margin-bottom: 0; }
+  em { font-style: italic; color: #e8dfd5; }
+  strong { font-weight: 500; color: #f0e8df; }
+
+  .chapter-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  .chapter-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #4a403b;
+    margin-bottom: 14px;
+  }
+  .chapter-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    color: #f0e8df;
+    line-height: 1.35;
+  }
+  .chapter-title span {
+    display: block;
+    font-size: 15px;
+    font-style: normal;
+    color: #5f5450;
+    letter-spacing: 0.06em;
+    margin-top: 6px;
+  }
+
+  .god-epigraph {
+    border-left: 1.5px solid #6b2240;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    background: #0c0908;
+    border-radius: 0 4px 4px 0;
+  }
+  .god-epigraph p {
+    font-size: 16px;
+    font-style: italic;
+    color: #9a8880;
+    line-height: 1.8;
+    margin-bottom: 0.8em;
+  }
+  .god-epigraph p:last-child { margin-bottom: 0; }
+  .god-attr {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #6b2240;
+    margin-top: 12px;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .pov-marker {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid #1e1a18;
+  }
+  .pov-noah { color: #5a52b8; }
+  .pov-savannah { color: #8c3a56; }
+
+  .scene-break {
+    text-align: center;
+    color: #2a2220;
+    font-size: 13px;
+    letter-spacing: 10px;
+    margin: 3rem 0;
+    user-select: none;
+  }
+
+  .god-interruption {
+    margin: 4rem 0;
+    padding: 2.25rem 2.5rem;
+    background: #090706;
+    border-top: 0.5px solid #1e1a18;
+    border-bottom: 0.5px solid #1e1a18;
+    text-align: center;
+  }
+  .god-interruption p {
+    font-size: 15.5px;
+    font-style: italic;
+    color: #857770;
+    line-height: 1.9;
+    margin-bottom: 0.75em;
+  }
+  .god-interruption p:last-child { margin-bottom: 0; }
+  .god-interruption .god-attr {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: #4a2f2f;
+    margin-top: 16px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+  }
+
+  .god-afterthought {
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+    border-top: 0.5px solid #1e1a18;
+  }
+  .god-afterthought-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #3a3230;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .god-afterthought p {
+    font-size: 16px;
+    font-style: italic;
+    color: #7a6e66;
+    line-height: 1.9;
+    text-align: center;
+    margin-bottom: 0.85em;
+  }
+  .god-afterthought p:last-child { margin-bottom: 0; }
+
+  .night-text {
+    margin: 3.5rem 0;
+    padding: 1.75rem 2rem;
+    background: #09080a;
+    border: 0.5px solid #1e1820;
+    border-radius: 4px;
+  }
+  .night-text p {
+    font-size: 17.5px;
+    color: #9080a0;
+    line-height: 1.85;
+    margin-bottom: 1em;
+    font-style: italic;
+  }
+  .night-text p:last-child { margin-bottom: 0; }
+  .night-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #3a2f42;
+    margin-bottom: 1.2rem;
+  }
+
+  .text-exchange {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bubble {
+    max-width: 80%;
+    padding: 0.7rem 1.1rem;
+    border-radius: 16px;
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+  .bubble-him {
+    align-self: flex-start;
+    background: #1a1720;
+    color: #b8b0cc;
+    border-bottom-left-radius: 4px;
+  }
+  .bubble-her {
+    align-self: flex-end;
+    background: #1c1014;
+    color: #c8a0b0;
+    border-bottom-right-radius: 4px;
+  }
+  .bubble-time {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #3a3240;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 6px 0 2px;
+  }
+
+  .kiss-scene {
+    margin: 4rem 0 0;
+    padding: 3rem 0;
+    border-top: 0.5px solid #1e1a18;
+  }
+  .kiss-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #5a2030;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .internal {
+    display: block;
+    font-style: italic;
+    color: #6e6068;
+    font-size: 17px;
+    margin: 1.8rem 1.5rem;
+    line-height: 1.75;
+  }
+
+  .ornament {
+    text-align: center;
+    color: #2a2020;
+    font-size: 13px;
+    letter-spacing: 6px;
+    margin: 2.5rem 0;
+    user-select: none;
+  }
+
+  .section-divider {
+    border: none;
+    border-top: 0.5px solid #1a1512;
+    margin: 4rem 0;
+  }
+</style>
+</head>
+<body>
+<div class="book">
+
+  <div class="chapter-header">
+    <div class="chapter-number">Chapter Three</div>
+    <div class="chapter-title">
+      Without Her Glasses
+      <span>or: what he was not prepared for, and everything that followed</span>
+    </div>
+  </div>
+
+  <div class="god-epigraph">
+    <p>Some people, when you finally see them clearly, confirm what you already suspected. They are exactly what they looked like from a distance. Understandable. Safe.</p>
+    <p>And then there are the others. The ones you think you have catalogued, and then they take off their glasses one Tuesday afternoon and you understand — with a quiet, cellular horror — that you had no idea. That you were working with a rough sketch this whole time. That the real thing is so far beyond the sketch that you don't know whether to be grateful or afraid.</p>
+    <p>Noah saw Savannah clearly for the first time in the fourth week. He was not the same afterward. I don't think he expected to be.</p>
+    <span class="god-attr">— G.</span>
+  </div>
+
+  <!-- NOAH — THE WAITING -->
+  <div class="pov-marker pov-noah">Noah — I</div>
+
+  <p>I get there forty minutes before she does. I have been doing this since the second week and I have not told her and I am not going to.</p>
+
+  <p>This is the part I don't examine too closely: the forty minutes. I finish my full session — I am disciplined, I am rigorous, I have a program and I follow it — and then I do something I have no clean name for, which is that I find somewhere in the room with a sightline to the door and I wait. I stretch things out. I take longer rest intervals. I invent reasons to stay near the entrance. And then she comes in and the whole room rearranges itself and I act like I just happened to be here, which is true, technically, and also the least true thing I've ever said.</p>
+
+  <p>I have an IQ of a hundred and forty-seven. I build systems for a living — complex, layered architectures that most people can't hold in their heads all at once. I am exceptionally good at measuring things: variables, outcomes, risk, probability. I have been told I am the kind of person who can see ten steps ahead and map the terrain between here and there before anyone else has stood up from their chair.</p>
+
+  <p>I cannot measure what happens to me when she walks through that door.</p>
+
+  <p>I have tried. I have sat with it the way I sit with hard problems, turned it around, looked for its edges. It doesn't have edges. Every time I think I've found the border of it, it turns out to be larger than I thought. She is — I don't have the right word, and I am not a person who runs out of words. She is an exception to several things I thought I understood about myself. She is the first thought when I wake up and the last one I put down, and the distance between those two points is full of her in ways that are not diminishing over time. They are accumulating.</p>
+
+  <p>This is not something I planned. I am also not trying to stop it. I'm not sure I could.</p>
+
+  <div class="scene-break">· · ·</div>
+
+  <p>She came in on a Thursday, four weeks in, and she wasn't wearing her glasses.</p>
+
+  <p>I don't know why I need to write that sentence with its own paragraph. I know why. It's because of what happened next, which was that she looked up and found me across the room and smiled — that smile, the unguarded one, the one that doesn't know it's doing it — and I felt it like a hand pressed flat against my sternum. Like something that was applying measured, deliberate pressure from the inside out.</p>
+
+  <p>I had seen her face before. Obviously. Every session, every walk home, every time she talked too fast about something she loved and forgot to moderate her enthusiasm. I knew her face.</p>
+
+  <p>I did not know her face.</p>
+
+  <p>Without the glasses I could see her eyes properly for the first time — the full shape of them, the way they caught the light, the particular way she narrowed them slightly when she was thinking something she hadn't decided yet whether to say. I stood there and I looked at her and I thought, with the specific clarity of someone who has just been shown something they cannot unfind: <em>how.</em></p>
+
+  <p>How does a person look like that. How does God make something and put it in a gym in the fourth week of my knowing her and expect me to — what, exactly. Continue existing in an orderly fashion. Continue standing two inches back. Continue being reasonable.</p>
+
+  <span class="internal">I said hi. I kept my voice completely even. I am a gifted liar when I need to be, which is its own kind of darkness I've made a separate peace with. She said hi back and pushed her hair out of her face and asked if I was ready, and I said yes, and that was it, and the rest of the session I spent in a state I can only describe as controlled catastrophe.</span>
+
+  <p>I spotted her on the bench press. Her eyes were open, fixed on the ceiling, and she was counting quietly under her breath. I stood above her and kept my hands loose and ready and looked at the ceiling too because looking at her face from that angle, from that distance, was a thing I did not trust myself to do without it showing.</p>
+
+  <p>She got all eight reps. On the last one she exhaled hard and said "okay, <em>that</em> was evil" and laughed, and I thought: there it is. There is the thing I would take apart every good thing I have built and burn it down to the foundations to keep hearing. That laugh. This specific one. In this specific room.</p>
+
+  <p>I thought: I am in a profound amount of trouble.</p>
+
+  <p>I thought: <em>good.</em></p>
+
+  <!-- SAVANNAH — THE GLASSES -->
+  <div class="pov-marker pov-savannah">Savannah — I</div>
+
+  <p>I left the glasses off because the left lens had a new scratch and it was bothering me and it had nothing — <em>nothing</em> — to do with him.</p>
+
+  <p>I will say that as many times as required.</p>
+
+  <p>What I was not ready for was the way he looked at me when I walked in. Not dramatically — not in any way I could point at and name with certainty. Just this brief, barely-there stillness. Like something in him paused. Like he was recalibrating something and didn't want me to see it.</p>
+
+  <p>I saw it.</p>
+
+  <p>I did what I always do when I see something I don't know what to do with: I smiled too big and said hi too quickly and went to go put my bag down and told myself I'd imagined it. Which is a lie I am very practiced at. I have a whole repertoire of lies I tell myself about Noah. They're getting harder to maintain. They require more effort every week and I am not sure I have the energy for all of them much longer but I am committed to the project for as long as possible because the alternative is admitting something I am not ready to admit.</p>
+
+  <p>The thing about being with him — actually with him, working through a session together, close and physical and warm — is that it makes me understand things about my own body I didn't have language for before. Not like that, or — not only like that. More specifically: I understand that my body has an opinion about him that it has not asked my permission to have. It knows when he's behind me. It tracks him without instruction. When he corrected my grip today — two fingers, four seconds, completely clinical — I felt it in my spine.</p>
+
+  <p>I finished the last rep and said something about it being evil and he laughed and I filed the sound away in the same place I've been filing everything about him, which is getting very full and will need to be dealt with at some point and I am actively not dealing with it.</p>
+
+  <span class="internal">I have started dreaming about someone. I can't see the face clearly — it's always slightly out of focus, like my glasses are off in the dream too, which is a detail that cannot mean anything, I refuse to let it mean anything — but there are hands. Patient, certain hands. And a voice. And the feeling of being known so thoroughly that there is nowhere to hide, and not wanting to hide, and that being the most terrifying and the most peaceful I have ever felt, both at once, in a dream I am having more frequently than I would like to report.</p>
+
+  <p>I have not told anyone about the dream. I am barely telling myself.</p>
+
+  <!-- GOD INTERRUPTION 1 -->
+  <div class="god-interruption">
+    <p>She can't see the face in the dream.</p>
+    <p>He has been the subject of every journal entry for twenty-six days.</p>
+    <p>They are doing this to each other from a careful distance, which is the most exquisite kind of damage — slow, consensual, completely unacknowledged. I have watched people fall in love for a very long time. I have never entirely gotten used to how much it looks, from the outside, like two people trying very hard not to fall.</p>
+    <span class="god-attr">— G.</span>
+  </div>
+
+  <!-- LATE NIGHTS -->
+  <div class="pov-marker pov-noah">Noah — II</div>
+
+  <p>She texts like she talks — fast, a little sideways, arriving at the point from an angle you didn't see coming. I have started sleeping badly because my phone lights up at one in the morning and my body knows before I'm fully awake who it is.</p>
+
+  <div class="text-exchange">
+    <div class="bubble-time">01:14</div>
+    <div class="bubble bubble-her">okay but why is the moon so aggressively bright tonight. feels personal</div>
+    <div class="bubble bubble-him">it's reflecting the sun. the sun thinks you need to be seen.</div>
+    <div class="bubble bubble-her">the sun doesn't know me</div>
+    <div class="bubble bubble-him">give it time</div>
+    <div class="bubble-time">01:22</div>
+    <div class="bubble bubble-her">noah</div>
+    <div class="bubble bubble-him">still here</div>
+    <div class="bubble bubble-her">do you ever get tired of being the most annoyingly certain person alive</div>
+    <div class="bubble bubble-him">never. go to sleep savannah</div>
+    <div class="bubble bubble-her">you go to sleep</div>
+    <div class="bubble bubble-him">i will when you do</div>
+    <div class="bubble bubble-her">…that's not fair</div>
+    <div class="bubble bubble-him">goodnight.</div>
+    <div class="bubble bubble-her">goodnight noah</div>
+    <div class="bubble bubble-her">…</div>
+    <div class="bubble bubble-her">thanks for staying up</div>
+  </div>
+
+  <p>I read that last message four times before I put the phone down. I lay in the dark and stared at the ceiling and did the thing I do, which is build things — architectures, systems, futures — but lately the only thing I'm building in the dark, in the quiet, is the shape of a life that has her in it. I build it out in detail. I don't let myself look at it directly. I build it the way you can sometimes only look at stars — peripheral, oblique, because straight on they disappear.</p>
+
+  <p>I am twenty-one years old and I have three companies in various stages of growth and a reputation in certain rooms that has taken four years of no-sleep hustle to earn. I have been afraid of exactly one thing my entire life, which is becoming unremarkable — becoming someone who had promise once and didn't do anything real with it, someone who lived small and died ordinary and left nothing worth reading on a wall anywhere.</p>
+
+  <p>I am not afraid of that right now. Right now I am afraid of something I have never been afraid of before, which is wanting something I cannot build or earn or architect my way into. Something that is entirely at another person's discretion. Something I have no control over.</p>
+
+  <p>I have an IQ of a hundred and forty-seven and I am completely at the mercy of a girl who texts me about the moon at one in the morning and I would not change a single variable.</p>
+
+  <!-- SAVANNAH — OPENING UP -->
+  <div class="pov-marker pov-savannah">Savannah — II</div>
+
+  <p>I told him about Marcus two Thursdays ago. Not everything — not yet, maybe not ever in its full shape — but enough. More than I've told most people. We were on the walk home and I don't even know how we got there, how the conversation arrived at that particular door, but we did, and I walked through it, which is something I still can't entirely account for.</p>
+
+  <p>I told him: <em>someone used kindness like a loan once, and I didn't understand the interest rate until it was already due.</em></p>
+
+  <p>He was quiet for a moment. Not the uncomfortable kind — his quiet never is. Then he said, very simply: "You don't owe me anything, Savannah. I want to be clear about that."</p>
+
+  <p>I said, "I know."</p>
+
+  <p>Which was the first time I'd said it and actually, in some partial way, believed it.</p>
+
+  <p>The thing about me that I don't think he fully knows yet — or maybe he does, because he is unsettlingly perceptive and I am starting to believe very little escapes him — is that I am not actually a sad person. I know I come wrapped in the evidence of having been sad, and I know the walls are up and visible, but underneath all of that I am — I don't know. Loud, sometimes. Silly. I laugh at things that aren't that funny because life is too short to maintain an appropriate level of gravity all the time. I make voices. I have opinions about very unimportant things with an intensity that is probably unreasonable.</p>
+
+  <p>He gets to see that now. I let him see it and I'm not sure exactly when I decided to, but it happened, and now on our walks home I talk too fast and zigzag and tease him for being annoyingly composed all the time and he takes it with this quiet smile that makes me want to say something reckless.</p>
+
+  <p>"You're gorgeous when you argue," he said, last Tuesday. Casual as weather.</p>
+
+  <p>"Stop making fun of me," I said immediately, which is my standard response, which he has clocked entirely.</p>
+
+  <p>"I never make fun of you."</p>
+
+  <p>"You're <em>teasing</em>."</p>
+
+  <p>"I don't tease," he said. "I state things. What you do with them is up to you."</p>
+
+  <p>I changed the subject. Later that night I lay in bed and replayed it nine times and on the ninth time I allowed myself, very briefly, to consider that he might mean it. That he might look at me — this mess of a person, this archive of old damage wearing a good face — and see something he actually wants to call gorgeous.</p>
+
+  <p>I considered it for about thirty seconds and then closed the door on it very firmly because if I let it in, if I let him in, and I'm wrong about what this is — I don't finish the thought. I haven't finished it in two weeks. I keep not finishing it and I think that is maybe its own kind of answer.</p>
+
+  <!-- THE DARK WORK DAY -->
+  <hr class="section-divider">
+
+  <div class="pov-marker pov-noah">Noah — III</div>
+
+  <p>There are weeks where the work is a fire I'm standing in and calling it warmth.</p>
+
+  <p>This is one of them. I have three things live, two things breaking, one thing that should be generating revenue and isn't, and a board conversation I've been avoiding for eleven days because having it means admitting something I'm not ready to admit. I haven't slept a full night in two weeks. I have been running on the specific fumes of someone who has not yet allowed themselves to stop, because stopping means the whole structure might realize it was being held up by momentum and collapse.</p>
+
+  <p>I came to the gym today because not coming wasn't an option. That's the truth. Not for the workout. For her.</p>
+
+  <p>I know that. I'm not going to pretend I don't know that.</p>
+
+  <p>She was already there when I arrived — which she does now, she comes every day, which is something I register with a warmth so profound it embarrasses me — and she took one look at my face when I came through the door and said, "Okay, what happened."</p>
+
+  <p>Not a question. An opening.</p>
+
+  <p>I said, "Work stuff." Which is the answer I give everyone, always, because it is true and it is also a door with a lock on it that most people accept at face value and move on.</p>
+
+  <p>She did not move on.</p>
+
+  <p>"Sit down," she said, and pointed at the bench beside her. Which — she has never done that. She doesn't give orders. She is careful about taking up space, careful about asking things of people. And here she was pointing at a bench like it was obvious, like it was the most natural thing, like she'd decided I was her problem to solve and she was getting started.</p>
+
+  <p>I sat down.</p>
+
+  <p>"Talk," she said.</p>
+
+  <p>And I did. God help me, I did. I told her about the three things and the two things breaking and the eleven-day-avoided conversation and the fact that I had built all of this — genuinely, from nothing, from a bedroom and a laptop at seventeen — and somewhere in the building of it I had stopped asking whether I wanted it and started just running, because running was all I knew how to do, and I wasn't sure anymore if I was building something or just maintaining the velocity of something that had already stopped making sense.</p>
+
+  <p>She listened through all of it. When I finished she was quiet for a moment — and then she said, simply: "What do you actually want to build?"</p>
+
+  <p>Six words. Six words and something in my chest moved like a tectonic thing. Like a plate that has been under pressure for so long it's forgotten it can shift.</p>
+
+  <p>I looked at her and she was looking back at me — not with pity, not with the polite concern that people perform when they're waiting for you to be done — but with the direct, particular attention of someone who actually wants the answer. Who believes the answer matters. Who has, without any fanfare, made space for the question in a way no one had in a very long time.</p>
+
+  <span class="internal">I thought: this is what it is. This is exactly this. She is — she is what I've been building toward without knowing it. She is the thing underneath all the velocity. She is what the running was for, if it was for anything.</span>
+
+  <p>I said, "I don't know yet. But I think I need to find out."</p>
+
+  <p>She nodded. Like that was enough. Like she would wait.</p>
+
+  <!-- NOAH GOES HOME -->
+  <div class="scene-break">· · ·</div>
+
+  <p>I went home that night and I sat at my desk for a long time without opening anything. I looked at the screens — three monitors, eight open tabs, the red dot on the email app with its two hundred and twelve unread — and I felt, very clearly, the specific weight of a life I had built for a version of myself that was running from something.</p>
+
+  <p>I closed everything.</p>
+
+  <p>Not metaphorically. Actually: closed the tabs, archived the projects, wrote three emails I should have written eleven days ago, moved things that needed to be moved. I did it methodically and without drama, the way I do most things, and then I sat in the quiet of the closed screens and I breathed for probably the first time in weeks.</p>
+
+  <p>I opened a blank document.</p>
+
+  <p>I typed: <em>what do I actually want to build.</em></p>
+
+  <p>And I wrote until three in the morning. Not for any board, not for any investor, not for anyone who would grade it or fund it or file it somewhere. Just for me. Just to find out what lived underneath the running when you finally stood still long enough to listen.</p>
+
+  <p>It turned out there was a lot there.</p>
+
+  <p>I texted her at three-fourteen: <em>you asked the right question today. thank you.</em></p>
+
+  <p>She replied at three-seventeen: <em>it's three am noah</em></p>
+
+  <p>I sent back: <em>goodnight savannah</em></p>
+
+  <p>She sent: <em>goodnight. I'm glad you sat down.</em></p>
+
+  <p>I stared at that for a while. <em>I'm glad you sat down.</em> The smallest sentence. I put it in the same place I put everything she gives me, which is a place that is not a folder or a file or anything that has a name in any system I've built. It is just — hers. A room inside me that is entirely hers, that she doesn't know about yet, that I am tending very carefully while I wait for her to be ready to see it.</p>
+
+  <!-- NEXT DAY — JOYOUS NOAH -->
+  <div class="pov-marker pov-savannah">Savannah — III</div>
+
+  <p>He walked in the next morning and I knew immediately something had changed.</p>
+
+  <p>Not loud — Noah is never loud about anything, it's one of the things about him that makes me want to shake him occasionally and also that I think I am dangerously close to — whatever. He walked in and there was a lightness to him that hadn't been there the day before. Like something had been set down. Like the weight I'd seen on his face yesterday had been deliberately, consciously unpacked and left somewhere else.</p>
+
+  <p>"What happened to you," I said. Because we are past the point where I ask politely. Somewhere in the last two weeks we crossed into the territory where I just say the thing and he takes it and gives it back, which is — I don't have a casual word for what that is.</p>
+
+  <p>"Good morning to you too," he said, and smiled. <em>That</em> smile — the real one, the one he doesn't waste on rooms, the one that is quiet and warm and slightly like someone who knows something you don't yet.</p>
+
+  <p>"Don't deflect. What happened?"</p>
+
+  <p>"No stress today," he said. "I closed everything last night. Starting over from scratch."</p>
+
+  <p>I looked at him. "Everything."</p>
+
+  <p>"Everything that wasn't mine anymore." He said it simply, like it was obvious, like it was something he should have done a long time ago and was mildly embarrassed it had taken this long. "I've been running someone else's version of what I should want. I'm done with it."</p>
+
+  <p>I didn't say anything for a moment. I was doing the thing I do where I feel something larger than I expected and I need a second to make sure my face isn't broadcasting it.</p>
+
+  <p>"That's terrifying," I said finally.</p>
+
+  <p>"Yeah," he agreed, cheerfully, in the way of someone who has already decided they're not afraid of it.</p>
+
+  <p>"And you're happy about it."</p>
+
+  <p>"Savannah." He looked at me. "I feel like I can breathe. Yes. I'm happy about it."</p>
+
+  <span class="internal">Something happened then that I have no clean word for. Something small and seismic simultaneously. He was standing there in the early morning light looking lighter than I'd ever seen him, and I thought — this. This is what he looks like when he's okay. When he's not carrying everything. When something has given him room to breathe. And I thought: I want to be something that gives him room to breathe. I want to be one of those things, for him. I want —</span>
+
+  <p>I stopped the thought. Firmly. Unkindly, even — grabbed it by the collar and put it in a room and locked the door. Because that thought has a shape that terrifies me. That thought has weight and implications and asks things of me that I don't know if I have left to give.</p>
+
+  <p>"Good," I said instead, and picked up my water bottle. "Then let's have a good session."</p>
+
+  <p>He smiled. "Yeah," he said. "Let's."</p>
+
+  <!-- GOD INTERRUPTION 2 -->
+  <div class="god-interruption">
+    <p>She locked the thought in a room. He could see the room from where he was standing. He said nothing about it.</p>
+    <p>He is learning her, which is the most intimate act. Not the grand gestures. Not the declarations. The learning. The understanding, piece by piece, of where the locked rooms are — their locations, their architecture, what they cost her to maintain. He is not trying to break the doors. He is just standing near enough that she knows, every time she walks past them, that he is there.</p>
+    <p>That is, I will tell you plainly, a more consuming thing than any force in this story. More than what is coming. More than the kiss they are both not acknowledging yet — him because he is patient, her because she is terrified of what comes after. The learning. The standing near. The steady, undemanding presence of someone who has decided you are worth waiting for and is not going to make it your problem.</p>
+    <p>That is the thing she has never had. That is why the room is locked. That is why the room won't stay locked much longer.</p>
+    <span class="god-attr">— G.</span>
+  </div>
+
+  <!-- THE KISS -->
+  <div class="kiss-scene">
+    <div class="kiss-label">Later — the same week</div>
+
+    <div class="pov-marker pov-noah" style="margin-top: 0;">Noah — IV</div>
+
+    <p>We stayed after the session for the first time. Neither of us planned it. It just happened the way things between us happen — without announcement, without decision, by some gravity I gave up trying to name a long time ago.</p>
+
+    <p>The gym had emptied out. It was that particular quiet that large spaces get when the people leave — the machines still, the air different. We were sitting on the floor against the mirrored wall, my back against the cool glass, her legs folded beside her, both of us tired in the good way. She was talking about something — I lose the thread of what, exactly, because the truth is I was not always listening to the words. I was listening to the way she talked, which is its own music entirely. The way she gestures when she's making a point. The way she laughs mid-sentence when something strikes her funny and doesn't apologize for it, just laughs and continues, which is one of the most joyful things I have ever seen a person do.</p>
+
+    <p>She said something and looked at me for a response and found me already looking at her.</p>
+
+    <p>She stopped talking.</p>
+
+    <p>There was a moment. One of those moments that is actually much longer than a moment — where something is being decided in a register below words, where the air between two people becomes a kind of pressure. I have thought about this moment approximately every hour since it happened and I still can't tell you exactly what moved in me, except that the two inches — the careful two inches I had been maintaining for weeks, which were a discipline and a decency and a deliberate act of respect — collapsed.</p>
+
+    <p>I reached over and I pulled her close by the waist. Both hands. Certain and immediate, the way I do everything when I have finally decided to do it — and she made a small sound that was not a protest and not quite its absence either, and then she was close, she was right there, and I could feel her breathing.</p>
+
+    <p>She put her hand on my chest. I thought she was going to push. She didn't push. She just put her hand there — flat against my sternum, like she was checking for something. Like she was deciding.</p>
+
+    <p>I ran my hand through her hair slowly, watching her face, giving her every opportunity in the world to say no or to leave or to put the wall back up, and she didn't. She looked up at me with those eyes — without the glasses, the full thing, nothing between us — and there was fear in them. Real fear. The kind that comes not from danger but from wanting something so badly you've terrified yourself with it.</p>
+
+    <p>I knew that fear. I had been living in it for weeks.</p>
+
+    <p>"Savannah," I said. Just her name. Quiet.</p>
+
+    <p>I don't know what I meant by it. Everything, probably. I think she heard everything.</p>
+
+    <!-- SAVANNAH POV - THE KISS -->
+    <div class="pov-marker pov-savannah" style="margin-top: 3rem;">Savannah — IV</div>
+
+    <p>I should have moved.</p>
+
+    <p>I know I should have moved — I had the thought, clear and immediate, the moment his hands found my waist: <em>move, this is exactly the thing you said you weren't doing, this is the room you locked, this is what you've been carefully not allowing, move.</em></p>
+
+    <p>My body didn't move. My body, which apparently has been keeping a separate counsel from my brain for several weeks now, had an entirely different opinion and was not interested in my objections.</p>
+
+    <p>He pulled me close so quickly, so certainly — not roughly, nothing about him is rough, but with a sureness that took the breath right out of the moment — and I was just there. Against him. And the first thing I noticed, before anything else, was that it felt like the thing I'd been bracing against had happened and I was still whole. That the ground had not opened. That I was still myself.</p>
+
+    <p>I put my hand on his chest because I needed something to hold onto. I don't think he knows that. It wasn't a boundary. It was ballast.</p>
+
+    <p>He put his hand in my hair and I looked up at him and I was afraid — genuinely, in my chest, in my throat — but not of him. Not of him. I was afraid of myself. Of the thing that was opening in me that I had been so careful to keep closed. Of the fact that I was looking at this boy and thinking: <em>I think I have been waiting for this specific person for a very long time without knowing there was anyone to wait for.</em></p>
+
+    <p>He said my name.</p>
+
+    <p>Just that. Just my name in his voice, quiet and serious and warm all at once, and whatever was left of my objections dissolved. Not because I was weak. Because I was tired — tired of the locked rooms and the careful distances and the preemptive grief of losing things I hadn't even let myself have yet. I was tired of protecting myself from something that kept showing up patient and steady and never once asking anything of me it hadn't already earned.</p>
+
+    <p>I stopped thinking about moving.</p>
+
+    <p>He kissed me like he'd been thinking about it for weeks, which I know now he had — certain and deliberate and unhurried, like someone who has finally arrived somewhere they navigated toward very carefully and intends to stay. And I — I kissed him back with everything I'd been locking in all those rooms. Everything I'd filed away. Every collected moment. Every text at one in the morning. Every rep he counted, every walk home, every time he said something true about me and let me not believe it without argument.</p>
+
+    <p>All of it came out in that moment.</p>
+
+    <p>His hand tightened in my hair — gently, but with a possessiveness I felt down to my spine — and I made a sound I would be embarrassed about if I had any brain left for embarrassment, which I didn't, which was the point, which was the terrifying and extraordinary point.</p>
+
+    <p>When we finally pulled back — both of us slightly unsteady, both of us not entirely sure where the rest of the room had gone — he looked at me with an expression I had never seen on him before. Something that was not patient. Something that was not measured. Something raw and unarchitected that I understood was what lived underneath all that deliberateness — the real thing, unguarded, just for me.</p>
+
+    <p>I laughed. I couldn't help it. Not a nervous laugh — the real one. The big one that happens before I can stop it.</p>
+
+    <p>"What?" he said.</p>
+
+    <p>"Nothing," I said. "I just — nothing."</p>
+
+    <p>He was still holding me. He didn't seem inclined to stop. I didn't seem inclined to move. We sat in the quiet of the emptied-out gym with his hands on me and my hand still against his chest and the whole enormous weight of the last four weeks hanging in the air between us like something finally spoken.</p>
+
+    <p>"I'm terrified," I told him. Because he deserved the truth and because I was done spending energy on the doors.</p>
+
+    <p>"I know," he said.</p>
+
+    <p>"Noah."</p>
+
+    <p>"Still here," he said. Same as the texts. The same two words he always sends when I don't know what to say and need someone to just — be there. <em>Still here.</em></p>
+
+    <p>I pressed my forehead against his shoulder. He put his arm around me. Outside, the city did whatever cities do — continued, indifferent, loud. In here it was just us and the mirrors and the specific, irreversible fact of what had just happened.</p>
+
+    <p>I was terrified.</p>
+
+    <p>I was the most at home I had felt in years.</p>
+
+    <p>Both of those things were true simultaneously, and I was beginning to understand that with him they always would be, and that this was not a reason to leave. It was, against everything I'd believed about myself, a reason to stay.</p>
+
+  </div>
+
+  <!-- GOD'S AFTERTHOUGHT -->
+  <div class="god-afterthought">
+    <div class="god-afterthought-label">Afterthought</div>
+    <p>She said <em>I'm terrified.</em></p>
+    <p>He said <em>I know.</em></p>
+    <p>He did know. He had known for weeks. He had watched her be terrified and he had not tried to talk her out of it or reason her past it or make it smaller than it was. He had just stayed near it. Near her. Patient in the way that is its own kind of statement — not passive, not absence of feeling, but the specific, costly steadiness of someone who has decided this is worth whatever it costs.</p>
+    <p>She laughed. After all of it — after the weight of those weeks, the locked rooms, the dream with the face she couldn't see — she laughed. The big one. The real one.</p>
+    <p>I made him fall in love with that laugh. I make no apologies for it. I knew what I was doing. I have always known what I was doing.</p>
+    <p>They stayed on that floor for a long time. Nobody came in. I made sure of it.</p>
+    <p>Some moments deserve to be uninterrupted.</p>
+    <p>Even I know that.</p>
+  </div>
+
+  <div class="ornament" style="margin-top: 5rem;">· · ·</div>
+
+</div>
+</body>
+</html>
