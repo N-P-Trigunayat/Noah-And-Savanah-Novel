@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Between God's Plan & Her Smile — Chapter Four</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0909;
+    color: #e8e2d9;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.9;
+    min-height: 100vh;
+  }
+
+  .book {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 5rem 2rem 8rem;
+  }
+
+  p {
+    margin-bottom: 1.4em;
+    color: #d4ccc4;
+  }
+  p:last-child { margin-bottom: 0; }
+  em { font-style: italic; color: #e8dfd5; }
+
+  .chapter-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  .chapter-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #3a3230;
+    margin-bottom: 14px;
+  }
+  .chapter-title {
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    color: #f0e8df;
+    line-height: 1.35;
+  }
+  .chapter-title span {
+    display: block;
+    font-size: 15px;
+    font-style: normal;
+    color: #52454a;
+    letter-spacing: 0.06em;
+    margin-top: 6px;
+  }
+
+  .god-epigraph {
+    border-left: 1.5px solid #3a1020;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 4rem;
+    background: #090608;
+    border-radius: 0 4px 4px 0;
+  }
+  .god-epigraph p {
+    font-size: 16px;
+    font-style: italic;
+    color: #7a6a68;
+    line-height: 1.8;
+    margin-bottom: 0.8em;
+  }
+  .god-epigraph p:last-child { margin-bottom: 0; }
+  .god-attr {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #3a1020;
+    margin-top: 14px;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .pov-marker {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid #181412;
+  }
+  .pov-noah { color: #4a44a0; }
+  .pov-savannah { color: #7a3050; }
+
+  .scene-break {
+    text-align: center;
+    color: #201c1a;
+    font-size: 13px;
+    letter-spacing: 10px;
+    margin: 3rem 0;
+    user-select: none;
+  }
+
+  /* THE DREAM — immersive, warm, no label, just drops you in */
+  .dream-body p {
+    font-size: 19.5px;
+    color: #d8cce0;
+    line-height: 2;
+    margin-bottom: 1.5em;
+    font-style: italic;
+  }
+
+  /* THE BREAK LINE — the violent seam */
+  .break-line {
+    border: none;
+    border-top: 1px solid #2a1820;
+    margin: 3.5rem 0 3.5rem;
+    position: relative;
+  }
+  .break-line::after {
+    content: 'WAKING';
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0a0909;
+    padding: 0 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: #3a1820;
+  }
+
+  /* WAKING — stripped, cold, present tense */
+  .waking-body p {
+    font-size: 19px;
+    color: #8a7e78;
+    line-height: 1.8;
+    margin-bottom: 1.3em;
+  }
+  .waking-body p.cold {
+    color: #6a5e58;
+    font-size: 18px;
+  }
+
+  /* RAW INTERNAL — no italics, no distance, just the thoughts */
+  .raw-thought {
+    margin: 2.5rem 0;
+    padding: 1.75rem 2rem;
+    background: #080707;
+    border-left: 2px solid #2a1018;
+  }
+  .raw-thought p {
+    font-size: 17.5px;
+    color: #9a7878;
+    line-height: 1.85;
+    margin-bottom: 0.9em;
+    font-style: normal;
+  }
+  .raw-thought p:last-child { margin-bottom: 0; }
+  .raw-thought p.uglier {
+    color: #7a5050;
+    font-size: 17px;
+  }
+
+  /* THE JOURNAL — his handwriting, his real voice */
+  .journal-block {
+    margin: 3.5rem 0;
+    padding: 2rem 2.25rem;
+    background: #07060a;
+    border: 0.5px solid #1a1520;
+    border-radius: 2px;
+  }
+  .journal-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: #282030;
+    margin-bottom: 1.5rem;
+  }
+  .journal-block p {
+    font-size: 17px;
+    color: #8878a0;
+    line-height: 1.9;
+    margin-bottom: 1em;
+    font-style: italic;
+  }
+  .journal-block p:last-child { margin-bottom: 0; }
+  .journal-block p.dark-line {
+    color: #6a5878;
+    font-size: 16.5px;
+  }
+
+  /* SAVANNAH POV */
+  .savannah-body p {
+    color: #d4ccc4;
+    margin-bottom: 1.4em;
+  }
+
+  .internal {
+    display: block;
+    font-style: italic;
+    color: #585060;
+    font-size: 17px;
+    margin: 2rem 1rem;
+    line-height: 1.8;
+  }
+
+  .god-interruption {
+    margin: 5rem 0;
+    padding: 2.5rem 2.75rem;
+    background: #060505;
+    border-top: 0.5px solid #141210;
+    border-bottom: 0.5px solid #141210;
+    text-align: center;
+  }
+  .god-interruption p {
+    font-size: 15.5px;
+    font-style: italic;
+    color: #6a5e58;
+    line-height: 2;
+    margin-bottom: 0.8em;
+  }
+  .god-interruption p:last-child { margin-bottom: 0; }
+  .god-interruption p.weight {
+    color: #7a3040;
+    font-size: 15px;
+  }
+  .god-interruption .god-attr {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: #301820;
+    margin-top: 18px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+  }
+
+  .god-afterthought {
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+    border-top: 0.5px solid #161210;
+  }
+  .god-afterthought-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #282420;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .god-afterthought p {
+    font-size: 16px;
+    font-style: italic;
+    color: #605850;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 0.9em;
+  }
+  .god-afterthought p.damning {
+    color: #703040;
+    font-size: 15.5px;
+  }
+  .god-afterthought p:last-child { margin-bottom: 0; }
+
+  .text-exchange {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bubble {
+    max-width: 78%;
+    padding: 0.65rem 1rem;
+    border-radius: 14px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+  .bubble-him {
+    align-self: flex-start;
+    background: #141220;
+    color: #9890b8;
+    border-bottom-left-radius: 3px;
+  }
+  .bubble-her {
+    align-self: flex-end;
+    background: #160e12;
+    color: #b08898;
+    border-bottom-right-radius: 3px;
+  }
+  .bubble-time {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #282030;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 4px 0;
+  }
+
+  .section-hr {
+    border: none;
+    border-top: 0.5px solid #141210;
+    margin: 4.5rem 0;
+  }
+
+  .ornament {
+    text-align: center;
+    color: #201a18;
+    font-size: 13px;
+    letter-spacing: 6px;
+    margin: 2.5rem 0;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+<div class="book">
+
+  <div class="chapter-header">
+    <div class="chapter-number">Chapter Four</div>
+    <div class="chapter-title">
+      What the Dark Builds
+      <span>or: the dream was real. the ceiling was the lie.</span>
+    </div>
+  </div>
+
+  <div class="god-epigraph">
+    <p>I want to tell you something about the boy before this chapter begins, because you are going to read what is inside him and I want you to understand it correctly.</p>
+    <p>He is not a monster. He is something more complicated than that — which is a boy who loves with the same intensity he brings to everything, which is total, which is without a volume dial, which does not know how to be partial. He does not know how to want something a little. He has never wanted anything a little in his life.</p>
+    <p>This is what makes him extraordinary. This is also what makes him dangerous. Often they are the same thing. Often you cannot have one without the other.</p>
+    <p>Read carefully.</p>
+    <span class="god-attr">— G.</span>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- THE DREAM — no label, no warning, drops straight in          -->
+  <!-- ============================================================ -->
+
+  <div class="pov-marker pov-noah">Noah</div>
+
+  <div class="dream-body">
+    <p>She is laughing and I have my hand in her hair and she is right here, she is actually right here, and the room is quiet and the mirrors are everywhere and in every mirror there are two of us and I think — this is the correct number. Two. This is exactly the right number of people for any room I am ever going to be in for the rest of my life.</p>
+
+    <p>I say her name. <em>Savannah.</em> And she looks up at me and the fear in her eyes dissolves — I watch it dissolve, I watch the exact moment it goes — and she lets me pull her in and she comes, she actually comes, she stops fighting it and she comes and I feel the breath go out of her against my neck and something in me that has been clenched for weeks just — releases. Goes still. Like a machine that has been running hot for so long it forgot what idle felt like, and then someone finally, finally cuts the power, and there is just quiet.</p>
+
+    <p>I kiss her and she kisses me back and her hands are in my shirt and I have my arm so tight around her waist that I am aware, distantly, that I should probably ease up, give her room, give her the careful two inches I always give her — and then I don't. I don't ease up. I hold on and she doesn't tell me to stop and I think: <em>I am never letting go of this. I am never going back to a world where I do not know what this feels like. Whatever it costs. Whatever it takes. This.</em></p>
+
+    <p>She pulls back just enough to look at me. Her face. Without the glasses. The full thing. And she is smiling — not the unguarded one, not the one that surprises itself — something different. Something that knows exactly what it's doing. Something that has decided.</p>
+
+    <p>She says: <em>I was always going to end up here.</em></p>
+
+    <p>And I believe her. I believe her completely, in the way you believe things that are true at the cellular level, below thought, below language, in the part of you that was there before you had words for anything — and I think: <em>yes. Yes. I knew it. I knew it from the door. I knew it from the first Tuesday. I knew it before she walked in and I didn't even know her name.</em></p>
+
+    <p>I put my forehead against hers. She is warm. She is here. She is real.</p>
+
+    <p>She is real she is real she is real she is —</p>
+  </div>
+
+  <!-- THE SEAM — violent break, no transition -->
+  <div class="break-line"></div>
+
+  <!-- THE WAKING — cold, stripped, present tense, physical -->
+  <div class="waking-body">
+    <p>Cold. The ceiling. The specific, indifferent white of a ceiling that does not know who I am and does not care that thirty seconds ago I was somewhere else entirely.</p>
+
+    <p class="cold">She is not here.</p>
+
+    <p class="cold">She was never here.</p>
+
+    <p>My hand is closed around nothing. I look at it. My own hand, in the dark, clenched around the shape of something that was hair and warmth and real — that was the realest thing I have ever felt — and it is empty. My hand is empty. The bed is empty. The room is empty and silent and mine alone and I feel the understanding arrive the way bad news arrives: not all at once, not with noise, but in slow, cold increments. First: the ceiling. Second: the dark. Third: the silence where her voice was. Fourth: the absence of her weight against me. Fifth: the understanding that my hand has been holding nothing. That I am alone. That she was never —</p>
+
+    <p class="cold">I sit up.</p>
+
+    <p class="cold">I sit at the edge of the bed for a long time and I do not move and I do not think and I do not pray. I breathe. In through the nose. Out through the mouth. I do this because it is the only thing I am capable of and because I am twenty-one years old and it is four in the morning and the girl I am in love with is asleep in a different building, in a different bed, in a life where tonight — in the real version of tonight — nothing happened. Nothing. We worked out. We walked home. She said goodnight. I said goodnight. I walked back alone in the dark and that was it, that was the whole of it, and I came home and sat at my desk and did not open anything and then eventually went to bed, and then I dreamed her so clearly that I had her, I had all of her, I had the thing I want more than I have ever wanted anything in my life —</p>
+
+    <p>And then I woke up.</p>
+
+    <p class="cold">And she is not here.</p>
+
+    <p class="cold">And she has never been here.</p>
+
+    <p class="cold">And she does not know.</p>
+  </div>
+
+  <!-- THE RAW INTERNAL — his real thoughts, ugly, possessive, frightening -->
+  <div class="raw-thought">
+    <p>I am going to tell you what I think, at four in the morning, sitting on the edge of my bed with my empty hand in my lap, because I have been composing myself in front of her for weeks and right now there is no one to compose myself for and I am exhausted by it.</p>
+    <p>I think about her constantly. Not like a song you can't get out of your head — that metaphor is too gentle, too ordinary, too much like something that happens to everyone. This is not that. This is structural. This is the way a building thinks about its foundation. She is the condition everything else is running inside and I did not choose this, it was not a decision, it arrived and it installed itself and I have not found the removal option and I have looked.</p>
+    <p class="uglier">I have looked. I have tried to think past her, around her, through her. I have tried to treat it like a variable I can control for. I can't. I am the most disciplined person I know and I have zero discipline where she is concerned and that fact alone should tell you something about what this is. It is not admiration. It is not affection. Those are gentle words for gentle things and this is not gentle. This is — I don't have a word that isn't either too small or too frightening.</p>
+    <p class="uglier">She is mine. That's what it feels like. Inside me, at four in the morning, where no one can hear it: she is mine. I know she hasn't agreed to that. I know she doesn't know I feel it. I know that by every reasonable standard the thought is excessive and possibly alarming. I am telling you anyway because it is true and I am done pretending it isn't, at least in here, at least right now, in the dark.</p>
+    <p>She is mine and she doesn't know it yet and I am waiting. I am so patient I terrify myself sometimes. I am standing two inches back and walking her home and counting her reps and texting at one in the morning and building the architecture of something she can't see yet — building it around her, for her, with her at the center of every single load-bearing wall — and she thinks I'm her friend.</p>
+    <p class="uglier">She thinks I'm her friend.</p>
+    <p>I am the most dangerous person in her life right now and she is completely unaware of it and I am not sure whether to be grateful for that or undone by it. Both. I am both.</p>
+  </div>
+
+  <!-- THE JOURNAL — what actually goes on the page -->
+  <div class="journal-block">
+    <div class="journal-label">Leather journal — 04:28 a.m.</div>
+    <p>I had her. For four minutes and some seconds I had her completely and it was enough to ruin me. Not hyperbole. A statement of fact. I am ruined. The before is not retrievable.</p>
+    <p class="dark-line">I closed everything I built because I thought I was starting over. I was not starting over. I was making room. I cleared the whole house and she walked in without knowing and now she lives in every room and I do not want her to leave and I have not told her she's there.</p>
+    <p class="dark-line">I think about what she looked like in the dream when she stopped being afraid. I think about it with a focus that should probably concern me. The specific moment — her eyes, the exact second the fear went out of them — I have replayed it so many times tonight that I am not certain anymore which parts were the dream and which parts I have built in the dark, from wanting, from the raw material of everything she's given me in five weeks of real life that I have been holding so carefully, so tightly, trying not to crush it.</p>
+    <p>I am twenty-one. I have an IQ of a hundred and forty-seven. I have not written a single line of code in nineteen days. I have not opened the framework. I have not called back the investor who is now very definitely done waiting. I have not built anything.</p>
+    <p class="dark-line">I have built her, in here. Every day. Every version of her I've seen and stored — the long sleeves, the corner machine, the glasses off, the laugh, the way she says my name when she's teasing, the way she says it when she's not — I have been constructing something in the dark that is more detailed than anything I have ever engineered and it is entirely made of her and it will not compile into anything unless she says yes.</p>
+    <p class="dark-line">She hasn't said yes. She doesn't know there's a question.</p>
+    <p>I don't know what I'm capable of. That's the honest entry for tonight. I don't know what I'm capable of and I think that for the first time in my life that's true in a way that should frighten me and mostly just doesn't.</p>
+  </div>
+
+  <!-- GOD INTERRUPTION -->
+  <div class="god-interruption">
+    <p>He sat at the edge of the bed until five-thirty.</p>
+    <p>Then he got up. Made coffee. Stood at the window. The city was doing what cities do before dawn — running its quieter version, the skeleton of itself, the roads half-empty and orange-lit. He stood there with both hands around the mug and he looked out and I want to tell you what his face looked like.</p>
+    <p>It looked like nothing. That is the thing. That is the part that should make you uncomfortable if you are reading carefully. He had spent an hour at the edge of his bed thinking thoughts that would alarm most people — possessive, consuming, crossing lines in the dark that he keeps neatly inside — and then he stood at a window and his face was completely still. Composed. Patient.</p>
+    <p class="weight">He is very good at the surface. He has been perfecting the surface for years. The surface is kind and steady and two inches back and nothing about it tells you what runs underneath it, which is a current that does not diminish and does not ask permission and has decided.</p>
+    <p class="weight">This is not a love story where the boy is safe. I want to be clear about that. He is not cruel. He is not malicious. He genuinely, completely, at a depth she has not encountered in another human being, loves her. And he is also capable of a patience so total it becomes its own kind of pressure. A steadiness so complete it forecloses alternatives. A love so certain it does not leave much room for the possibility that she might choose something different.</p>
+    <p class="weight">He would never force her. He will never need to. That is the darkest thing I have to tell you about him. He will simply wait. He will wait with that face, that steady kind face, until she walks into the room he has already built for her.</p>
+    <p>She is already walking toward it. She doesn't know it yet.</p>
+    <p>Neither does he, fully.</p>
+    <p>But I do.</p>
+    <span class="god-attr">— G.</span>
+  </div>
+
+  <!-- SAVANNAH POV — she notices something is different but misreads it entirely -->
+  <div class="pov-marker pov-savannah">Savannah</div>
+
+  <div class="savannah-body">
+    <p>He looked different this morning and I couldn't figure out why.</p>
+
+    <p>Not worse. Not better. Just — altered. Like something had shifted half a degree overnight and the light was hitting him differently. He was exactly as present as he always is, exactly as attentive, stood where he stood and said what he said and walked beside me on the way home without anything obviously changed. And yet.</p>
+
+    <p>I've been around him enough now to know his textures. The working-too-hard texture, the genuinely-at-peace texture, the quietly-amused-by-something texture that he gets when I say something he finds funny but doesn't want to reward too much. I know them. I have catalogued them with a thoroughness I would be embarrassed to admit to anyone, including myself.</p>
+
+    <p>This was none of them. This was something new. Something underneath the surface — pressed close to it, pushing slightly outward, like something that wanted to be said and was being held back by force of will.</p>
+
+    <p>I asked him on the walk: "Are you alright?"</p>
+
+    <p>"Yes," he said. Immediate. No pause, no texture change, no tells.</p>
+
+    <p>"You seem —"</p>
+
+    <p>"I'm fine, Savannah." And then he looked at me sideways and gave me the quiet smile — the real one — and said, "Are you checking on me?"</p>
+
+    <p>"Don't flatter yourself," I said.</p>
+
+    <p>He laughed. Low and short and real. And I felt it, the way I always feel it when I make him laugh — this stupid warmth that runs from my chest down to my hands and I have to do something with my hands so it's not obvious.</p>
+
+    <p>I thought: he's fine. He had a weird night, maybe. He's tired. He's always tired — he pushes himself in ways that make me want to ask uncomfortable questions about whether he thinks he's allowed to rest. He's fine.</p>
+
+    <span class="internal">I believed it. I needed to believe it because the alternative — that something was happening inside him that he was not showing me, that behind the steady surface something was pressing outward that he was holding back by will — that alternative had implications I was not ready to follow to their conclusion. Because I would have to ask what. And then he would have to tell me. And then something between us would change into a shape I am not sure I know how to hold.</span>
+
+    <p>So I believed he was fine.</p>
+
+    <p>At my door I said goodnight and he said goodnight and for one second — one strange, suspended second — he looked at me like he was going to say something else. His mouth opened. His eyes had that depth in them, the one I keep failing to name.</p>
+
+    <p>Then he closed it. Whatever it was, he swallowed it back. Said goodnight again, quieter, and turned and walked away.</p>
+
+    <p>I watched him go. Longer than three seconds this time. Longer than I'm going to admit.</p>
+
+    <p>I went inside and I did not stand in the hallway. I went straight to my room and I lay face-up on my bed and I stared at the ceiling and I thought about the way he'd looked at me in that one second — that thing in his eyes, that depth, that something-pressing-outward — and I thought: <em>what is it. What is it that you are not saying.</em></p>
+
+    <p>And then underneath that, quieter, the thought I like least about myself lately:</p>
+
+    <p><em>Whatever it is. Whatever it is — say it. Please just say it.</em></p>
+
+    <p>I don't examine that thought. I put it in the room with the others and I close the door and I go and make tea and I do not think about him for the rest of the night.</p>
+
+    <p>I think about him for the rest of the night.</p>
+
+    <p>The difference is now I don't even pretend I don't.</p>
+  </div>
+
+  <!-- GOD'S AFTERTHOUGHT — damning, precise -->
+  <div class="god-afterthought">
+    <div class="god-afterthought-label">Afterthought</div>
+    <p>She said <em>whatever it is — say it.</em></p>
+    <p>She said it to a ceiling in an empty room. She said it to herself.</p>
+    <p>He walked home in the dark and did not open the journal again. He'd already written what was real. He sat at his desk and looked at the blank document — the one with one line in it, <em>what do I actually want to build</em> — and he typed a second line. Just one. Then he closed it.</p>
+    <p class="damning">The second line was her name.</p>
+    <p class="damning">Not a metaphor. Not a direction. Just her name, sitting there below the question like an answer that does not require the question to be finished.</p>
+    <p>He closed the laptop. He went to bed. He did not dream — or if he did, he did not remember it, which is its own kind of mercy, which I arranged.</p>
+    <p>She dreamed something warm. She woke reaching for something that wasn't there and spent a full minute in that grasping, half-awake place where the dream-logic still has you by the collar, trying to understand what she'd lost. She couldn't remember what it was.</p>
+    <p class="damning">It had his hands. His voice. His face at the exact moment it stopped being composed — raw and unguarded and entirely, frighteningly hers.</p>
+    <p>She didn't remember. She got up and made coffee and went to the gym.</p>
+    <p>He was already there.</p>
+    <p>He is always already there.</p>
+  </div>
+
+  <div class="ornament" style="margin-top: 5rem;">· · ·</div>
+
+</div>
+</body>
+</html>
